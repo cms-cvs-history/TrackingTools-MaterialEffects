@@ -1,0 +1,5 @@
+es_module MaterialPropagator = PropagatorWithMaterialESProducer {
+  string ComponentName = "PropagatorWithMaterial"
+  string PropagationDirection = "alongMomentum"
+  double Mass = 0.105
+}

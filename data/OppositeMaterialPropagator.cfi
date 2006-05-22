@@ -1,0 +1,5 @@
+es_module OppositeMaterialPropagator = PropagatorWithMaterialESProducer {
+  string ComponentName = "PropagatorWithMaterialOpposite"
+  string PropagationDirection = "oppositeToMomentum"
+  double Mass = 0.105
+}
