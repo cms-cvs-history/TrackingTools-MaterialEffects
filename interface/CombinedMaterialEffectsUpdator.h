@@ -1,14 +1,21 @@
 #ifndef _CR_COMBINEDMATERIALEFFECTSUPDATOR_H_
 #define _CR_COMBINEDMATERIALEFFECTSUPDATOR_H_
 
+/** \class CombinedMaterialEffectsUpdator
+ *  Combines EnergyLossUpdator and MultipleScatteringUpdator.
+ *  Adds effects from multiple scattering (via MultipleScatteringUpdator)
+ *  and energy loss (via EnergyLossUpdator).
+ *  Ported from ORCA.
+ *
+ *  $Date: 2007/05/09 10:13:49 $
+ *  $Revision: 1.1 $
+ *  \author todorov, cerati
+ */
+
 #include "TrackingTools/MaterialEffects/interface/MultipleScatteringUpdator.h"
 #include "TrackingTools/MaterialEffects/interface/EnergyLossUpdator.h"
 #include "TrackingTools/MaterialEffects/interface/MaterialEffectsUpdator.h"
 
-/** Combines EnergyLossUpdator and MultipleScatteringUpdator.
- * Adds effects from multiple scattering (via MultipleScatteringUpdator)
- *   and energy loss (via EnergyLossUpdator).
- */
 class CombinedMaterialEffectsUpdator : public MaterialEffectsUpdator
 {  
  public:

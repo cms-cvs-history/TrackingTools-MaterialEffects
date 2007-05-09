@@ -1,11 +1,18 @@
 #ifndef _CR_MULTIPLESCATTERINGUPDATOR_H_
 #define _CR_MULTIPLESCATTERINGUPDATOR_H_
 
+/** \class MultipleScatteringUpdator
+ *  Adds effects from multiple scattering (standard Highland formula)
+ *  to a trajectory state. Uses radiation length from medium properties.
+ *  Ported from ORCA.
+ *
+ *  $Date: 2007/05/09 10:13:49 $
+ *  $Revision: 1.1 $
+ *  \author todorov, cerati
+ */
+
 #include "TrackingTools/MaterialEffects/interface/MaterialEffectsUpdator.h"
 
-/** Adds effects from multiple scattering (standard Highland formula)
- *  to a trajectory state. Uses radiation length from medium properties.
- */
 class MultipleScatteringUpdator : public MaterialEffectsUpdator 
 {
 #ifndef CMS_NO_RELAXED_RETURN_TYPE

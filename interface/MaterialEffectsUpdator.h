@@ -1,14 +1,20 @@
 #ifndef _CR_MATERIALEFFECTSUPDATOR_H_
 #define _CR_MATERIALEFFECTSUPDATOR_H_
 
+/** \class MaterialEffectsUpdator
+ *  Interface for adding material effects during propagation.
+ *  Updates to TrajectoryStateOnSurface are implemented 
+ *  in this class.
+ *  Ported from ORCA.
+ *
+ *  $Date: 2007/05/09 10:13:49 $
+ *  $Revision: 1.1 $
+ *  \author todorov, cerati
+ */
+
 #include "TrackingTools/TrajectoryState/interface/TrajectoryStateOnSurface.h"
 #include "DataFormats/TrajectorySeed/interface/PropagationDirection.h"
 
-/**
- * Interface for adding material effects during propagation.
- *   Updates to TrajectoryStateOnSurface are implemented 
- *   in this class.
- */
 class MaterialEffectsUpdator
 {  
 public:

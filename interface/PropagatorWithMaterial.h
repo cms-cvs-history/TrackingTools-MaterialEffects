@@ -1,21 +1,27 @@
 #ifndef _COMMONRECO_PROPAGATORWITHMATERIAL_H_
 #define _COMMONRECO_PROPAGATORWITHMATERIAL_H_
 
+/** \class PropagatorWithMaterial
+ *  Propagation including material effects.
+ *
+ *  Propagates using a specific for the geometrical part 
+ *  and a MaterialEffectsUpdator to include multiple scattering and
+ *  energy loss. By default material effects are included at the
+ *  source in the case of forward propagation and at the destination
+ *  for backward propagation. Material effects at the source can
+ *  only be included when propagating from a TrajectoryStateOnSurface.
+ *  Ported from ORCA.
+ *
+ *  $Date: 2007/05/09 10:13:49 $
+ *  $Revision: 1.1 $
+ *  \author todorov, cerati
+ */
+
 #include "DataFormats/GeometryCommonDetAlgo/interface/DeepCopyPointerByClone.h"
 #include "TrackingTools/GeomPropagators/interface/Propagator.h"
 #include "TrackingTools/MaterialEffects/interface/MaterialEffectsUpdator.h"
 #include "MagneticField/Engine/interface/MagneticField.h"
 
-
-/** Propagation including material effects.
- *
- *  Propagates using a specific for the geometrical part 
- *   and a MaterialEffectsUpdator to include multiple scattering and
- *   energy loss. By default material effects are included at the
- *   source in the case of forward propagation and at the destination
- *   for backward propagation. Material effects at the source can
- *   only be included when propagating from a TrajectoryStateOnSurface.
- */
 class PropagatorWithMaterial : public Propagator {
   
 public:
