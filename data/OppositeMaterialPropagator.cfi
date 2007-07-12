@@ -3,4 +3,5 @@ es_module OppositeMaterialPropagator = PropagatorWithMaterialESProducer {
   string PropagationDirection = "oppositeToMomentum"
   double Mass                 = 0.105
   double MaxDPhi              = 1.6
+  bool useRungeKutta          = false
 }
