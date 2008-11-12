@@ -1,3 +1,0 @@
-include "TrackingTools/MaterialEffects/data/MaterialPropagator.cfi"
-include "TrackingTools/MaterialEffects/data/OppositeMaterialPropagator.cfi"
-include "TrackingTools/MaterialEffects/data/RungeKuttaTrackerPropagator.cfi"
