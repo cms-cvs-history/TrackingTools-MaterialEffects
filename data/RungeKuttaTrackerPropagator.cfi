@@ -1,7 +1,0 @@
-es_module RungeKuttaTrackerPropagator = PropagatorWithMaterialESProducer {
-  string ComponentName = "RungeKuttaTrackerPropagator"
-  string PropagationDirection = "alongMomentum"
-  double Mass                 = 0.105
-  double MaxDPhi              = 1.6
-  bool useRungeKutta          = true
-}
